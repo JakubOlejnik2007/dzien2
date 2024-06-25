@@ -1,4 +1,5 @@
 <script setup>
+import Blog from "./components/Blog.vue"
 import { ref } from 'vue';
 import { dzien2_backend } from 'declarations/dzien2_backend/index';
 let greeting = ref('');
@@ -26,5 +27,6 @@ async function handleSubmit(e) {
       <button type="submit">Click Me!</button>
     </form>
     <section id="greeting">{{ greeting }}</section>
+    <Blog />
   </main>
 </template>
